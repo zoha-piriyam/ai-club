@@ -1,0 +1,33 @@
+{
+    "team_name": "Team Name",
+    "students": [
+        {
+            "student_id": "k12239026",
+            "first_name": "Zahra",
+            "last_name": "Piriyam",
+            "email": "k12239026@students.jku.at",
+            "github_user": "zoha-piriyam"
+        },
+        {
+            "student_id": "K12453704",
+            "first_name": "Selvasubramanian",
+            "last_name": "SIVAGIRINATHAN",
+            "email": "K12453704@students.jku.at",
+            "github_user": "Selvasubramanian-Sivagirinathan"
+        },
+        {
+            "student_id": "K12348010",
+            "first_name": "Syeda Nusraht",
+            "last_name": "Khaledur",
+            "email": "K12348010@students.jku.at",
+            "github_user": "syedanusrat007"
+        },
+        {
+            "student_id": "K12453713",
+            "first_name": "Rawan Ismail shahatou abdou",
+            "last_name": "Arafa",
+            "email": "K12453713@students.jku.at",
+            "github_user": "Rawan-arafa"
+        }
+    ]
+}

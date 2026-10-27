@@ -1,0 +1,26 @@
+{
+    "team_name": "AI Club",
+    "students": [
+        {
+            "first_name": "Zahra",
+            "last_name": "Piriyam",
+            "workload": 0.25
+        },
+        {
+            "first_name": "Selvasubramanian",
+            "last_name": "SIVAGIRINATHAN",
+            "workload": 0.25
+        },
+        {
+            "first_name": "Syeda Nusraht",
+            "last_name": "Khaledur",
+            "workload": 0.25
+        },
+        {
+            "first_name": "Rawan Ismail shahatou abdou",
+            "last_name": "Arafa",
+            "workload": 0.25
+        }
+        
+    ]
+} 
