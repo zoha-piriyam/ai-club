@@ -3,7 +3,7 @@
 **AI-aided pair members**
 
 - **Syeda Nusraht Khaledur** — Student ID: **K12348010**
-- **[Partner’s full name]** — Student ID: **[Partner’s student ID]**
+- **Selvasubramanian SIVAGIRINATHAN** — Student ID: **K12453704**
 
 Our project uses Logistic Regression to study diabetes predictions in the Pima Indians Diabetes dataset. I worked on checking the data and creating Phase I visualizations to understand where the model made mistakes.
 
