@@ -49,7 +49,7 @@ We will analyze model predictions using visualizations of prediction outcomes, f
 Required packages: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn` (version 1.7.2 to load the saved model).
 
 Open and run either Phase I notebook:
-- `phase1-human group.ipynb`
+- `phase1-human-group.ipynb`
 - `phase1-ai-group.ipynb`
 
 Both notebooks only use `prediction_results.csv`, which is included in the repository.
