@@ -19,4 +19,14 @@ GenAI supported notebook creation, code debugging, visualization design, and int
 
 The Phase I visualizations were run on the team’s prediction CSV in the assistant’s environment. Before presenting final findings, the group should rerun the notebook and resolve the preprocessing mismatch identified during review. The dataset is small, so patterns in the plots should be described as observations about this test set rather than general medical conclusions.
 
-What we learned from using GenAI. We kept the suggested feature plots and threshold sweep because they helped us see where errors occurred and how changing the cutoff affected them. We revised the feature plots after noticing that they showed zero-coded glucose and BMI as real measurements. We excluded those placeholders from the relevant plots and added subgroup counts so small samples were visible. A broken dataset link, an undefined variable, and a missing Seaborn package also needed troubleshooting. What worked best was to share the exact error or chart, ask a focused follow-up, then rerun the code and verify the results against the saved data.
+## Decisions and why
+
+We kept the suggested feature plots and threshold sweep because they showed where the model made mistakes and how changing the cutoff affected missed cases and false alarms. We revised the feature plots after noticing that zero placeholders for glucose and BMI were shown as real measurements. We excluded those zeros from the relevant plots and added subgroup counts so readers could see when a finding was based on only a few records.
+
+## Failure patterns
+
+A suggested dataset link did not work, the loading code used `rename_features` before it was defined, and Seaborn was missing in one environment. The first feature plots also ran successfully while showing zero placeholders as real measurements. This showed us that code can run and still produce a misleading chart.
+
+## Best practices
+
+What worked best was sharing the exact error or chart with GenAI, asking a focused follow-up, and rerunning the code. Before interpreting a chart, we checked the counts against the saved data and looked at how many records were in each subgroup.
