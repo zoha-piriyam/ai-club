@@ -2,8 +2,7 @@
 
 **AI-aided pair members**
 
-- **Syeda Nusraht Khaledur** — Student ID: **K12348010**
-- **Selvasubramanian SIVAGIRINATHAN** — Student ID: **K12453704**
+**Members:** Syeda Nusraht Khaledur (K12348010), Selvasubramanian SIVAGIRINATHAN (K12453704)
 
 ## What we analyzed
 
@@ -41,3 +40,26 @@ Both groups found that false alarms were common at higher glucose levels. Group 
 ## How GenAI influenced our work
 
 GenAI helped us write and debug the notebook and suggested comparing errors by feature and by threshold. We kept those ideas because they showed where the model made mistakes. We revised the feature plots after noticing that zero placeholders for glucose and BMI appeared as real measurements. We also checked the counts behind the charts and the difference between saved and recalculated labels at 0.50. The most useful approach was to give GenAI a specific problem, ask a focused follow-up, and verify the result against the data. The AI interaction record documents the prompts and decisions in more detail.
+
+## Human-only pair perspective 
+
+**Members:** Zahra Piriyam (K12239026), Rawan Arafa (K12453713)
+
+### How we worked
+We used only pandas and matplotlib and worked step by step: each step started from a question raised by the previous result (pregnancy halves → false positives → glucose → the six false positives at glucose ≤140 → missed diabetic patients). In our last step we found that the six confidently missed patients all had glucose below 140 (mean 103.8 vs. 162.1 for detected patients). Together with the false alarms at high glucose, this suggests the model relies strongly on glucose in both directions. Steps 1–6 took us about one day.
+
+### What each pair saw that the other did not
+- **Only human-only pair:** the interaction between pregnancy group and glucose, and the link between low glucose and confident misses.
+- **Only AI-aided pair:** the threshold trade-off, error rates across feature ranges, and treating zero values as missing (we did not do this).
+
+### Visualization choices
+We used simple box plots, bar charts, a scatter plot and a histogram, with printed tables as the main evidence. Group AI-aided pair used seaborn, box plots with individual points, binned error-rate charts with counts, and threshold curves.
+
+### Breadth vs. depth
+Group AI-aided pair covered more features and the threshold (broader). We followed one pattern through connected steps (deeper).
+
+### Speed and effort
+Writing the code was manageable. What took most time was deciding how to show the data so that we could analyse it, for example how to split patients into groups, and interpreting the numbers before choosing the next step. Without AI we had no suggestions for chart types or directions, so each step depended on our own reading of the previous result.
+
+### Confidence
+We are fairly confident in the main pattern: it was consistent across our steps and also appears in Group AI-aided pair's results. We are less sure about details based on very small subgroups (6 patients).
