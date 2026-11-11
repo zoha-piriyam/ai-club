@@ -22,6 +22,9 @@ The project uses data visualization to investigate how the model behaves, which 
 
 ## Phase I: How Does the Model Behave?
 
+[Progress video](https://drive.google.com/drive/folders/108HpasWlHNA7T9G24Ts3YgbiF7hGl9uC)
+
+
 We will analyze model predictions using visualizations of prediction outcomes, feature distributions, and error patterns. We will investigate differences between correctly and incorrectly classified records rather than relying only on aggregate performance metrics.
 ## Team and Pairs
 
